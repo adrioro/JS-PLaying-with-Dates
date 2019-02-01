@@ -19,3 +19,9 @@ $("#dayName").click(function () {
     var day = (d.getDay());
     $('#dayName').after("<br><br>" + weekDay[day] + "<br>");
 });
+
+var weekDay = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+$("#tomorrow").click(function () {
+    var day = (d.getDay()) + 1;
+    $('#tomorrow').after("<br><br>" + weekDay[day] + "<br>");
+});
